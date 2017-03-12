@@ -12,7 +12,9 @@ public class MainParser {
 		
 		Stream<String> lines = Files.lines(Paths.get("C:/Windows/uml-parser-test-1"));
 		
-		System.out.println(lines);
+		String src = args[0];
+		String output = args[1];
+		System.out.println(args[0]);
 
 	}
 
