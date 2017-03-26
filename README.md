@@ -9,3 +9,8 @@ UMLGraph:
 UMLGraph is an open source code that can be used for the drawing of UML class and sequence diagrams and the reverse engineering of class diagrams from Java source code. 
 
 The UMLGraph source code repository is available on GitHub at https://github.com/dspinellis/UMLGraph.
+
+UML Class diagram:
+
+In Software Engineering, a class diagram in the Unified Modeling Language (UML) is a structure diagram that describes the system's classes, attributes, methods, and the relationships among objects.
+We can refer to the following Wiki page for further reading on UML Class diagrams: https://en.wikipedia.org/wiki/Class_diagram
