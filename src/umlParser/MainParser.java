@@ -1,20 +1,20 @@
 package src.umlParser;
 
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.stream.Stream;
 
 public class MainParser {
 
 	public static void main(String[] args) throws IOException  {
 		//FileInputStream in = new FileInputStream("C:/Windows/uml-parser-test-1");
 		
-		Stream<String> lines = Files.lines(Paths.get("C:/Windows/uml-parser-test-1"));
+		//Stream<String> lines = Files.lines(Paths.get("C:/Windows/uml-parser-test-1"));
 		
 		String src = args[0];
-		String output = args[1];
-		System.out.println(args[0]);
+		String outputfile = args[1];
+		
+		FileInputStream in = new FileInputStream(src);
+		System.out.println(in);
 
 	}
 
