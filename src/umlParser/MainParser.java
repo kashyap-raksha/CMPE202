@@ -15,6 +15,9 @@ public class MainParser {
 		
 		FileInputStream in = new FileInputStream(src);
 		System.out.println(in);
+		if (src.isEmpty()){
+			System.out.println("Please enter a source file name");
+		}
 
 	}
 
