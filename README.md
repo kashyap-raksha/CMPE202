@@ -16,5 +16,5 @@ JavaParser is a set of tools to do the following with a Java code:
 1)parse
 2)analyze
 3)transform
-4)generate
+4)generate.
 For further information, please refer: http://javaparser.org/
