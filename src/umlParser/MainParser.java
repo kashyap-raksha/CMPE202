@@ -18,6 +18,11 @@ public class MainParser {
 		if (src.isEmpty()){
 			System.out.println("Please enter a source file name");
 		}
+		else{
+			//CompilationUnit parse = JavaParser.parse(src);
+			System.out.println("A source file exists");
+		}
+		}
 
 	}
 
