@@ -10,3 +10,11 @@ The UMLGraph source code repository is available on GitHub at https://github.com
 UML Class diagram:
 In Software Engineering, a class diagram in the Unified Modeling Language (UML) is a structure diagram that describes the system's classes, attributes, methods, and the relationships among objects.
 We can refer to the following Wiki page for further reading on UML Class diagrams and other UML diagrams: https://en.wikipedia.org/wiki/Class_diagram
+
+JavaParser:
+JavaParser is a set of tools to do the following with a Java code:
+1)parse
+2)analyze
+3)transform
+4)generate
+For further information, please refer: http://javaparser.org/
