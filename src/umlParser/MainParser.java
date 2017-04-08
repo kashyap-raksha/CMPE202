@@ -16,7 +16,8 @@ public class MainParser {
 		if (args.length == 2){
 			String src = args[0];
 			String outputfile = args[1];
-			src_files = new File(src);		
+			src_files = new File(src);
+			listOfFiles = src_files.listFiles();
 		}
 		else
 		{
@@ -26,6 +27,12 @@ public class MainParser {
 		
 		//FileInputStream in = new FileInputStream(src);
 		//System.out.println(in);
-		
+		if (listOfFiles.length <= 0){
+			System.out.println("Please enter a source file name with Java files");
+		}
+		else{
+			//CompilationUnit parse = JavaParser.parse(src);
+			System.out.println("A source file exists in the source path");
+		}
 	}
 }
