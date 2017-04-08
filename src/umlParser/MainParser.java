@@ -24,8 +24,8 @@ public class MainParser {
 		}
 		
 		
-		FileInputStream in = new FileInputStream(src);
-		System.out.println(in);
+		//FileInputStream in = new FileInputStream(src);
+		//System.out.println(in);
 		
 	}
 }
