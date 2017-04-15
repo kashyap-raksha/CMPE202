@@ -11,7 +11,7 @@ public class MainParser {
 
 	public static void main(String[] args) throws IOException  {
 		//FileInputStream in = new FileInputStream("C:/Windows/uml-parser-test-1");
-		
+		javaParser p = new javaParser();
 		//Stream<String> lines = Files.lines(Paths.get("C:/Windows/uml-parser-test-1"));
 		if (args.length == 2){
 			String src = args[0];
@@ -39,7 +39,9 @@ public class MainParser {
 			    //String content = FileUtils.readFileToString(file);
 			    /* do somthing with content */
 				  //parser.start();
-				  System.out.println(file.getName());
+				  String file_name = file.getName();
+				  System.out.println(file_name);
+				  p.startParsing(file);
 			  } 
 			}
 
