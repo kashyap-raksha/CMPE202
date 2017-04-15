@@ -15,24 +15,33 @@ public class MainParser {
 		//Stream<String> lines = Files.lines(Paths.get("C:/Windows/uml-parser-test-1"));
 		if (args.length == 2){
 			String src = args[0];
-			String outputfile = args[1];
 			src_files = new File(src);
 			listOfFiles = src_files.listFiles();
 		}
 		else
 		{
-			System.out.println("Provide all required arguments.");
+			System.out.println("Provide the required arguments.");
 		}
 		
 		
 		//FileInputStream in = new FileInputStream(src);
 		//System.out.println(in);
-		if (listOfFiles.length <= 0){
+		/*if (listOfFiles.length <= 0){
 			System.out.println("Please enter a source file name with Java files");
 		}
 		else{
 			//CompilationUnit parse = JavaParser.parse(src);
 			System.out.println("A source file exists in the source path");
-		}
+		}*/
+		for (int i = 0; i < listOfFiles.length; i++) {
+			  File file = listOfFiles[i];
+			  if (file.isFile() && file.getName().endsWith(".java")) {
+			    //String content = FileUtils.readFileToString(file);
+			    /* do somthing with content */
+				  //parser.start();
+				  System.out.println(file.getName());
+			  } 
+			}
+
 	}
 }
