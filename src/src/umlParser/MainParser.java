@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+import src.umlParser.*;
+
 public class MainParser {
 	
 	private static File src_files = null;
@@ -11,7 +13,7 @@ public class MainParser {
 
 	public static void main(String[] args) throws IOException  {
 		//FileInputStream in = new FileInputStream("C:/Windows/uml-parser-test-1");
-		javaParser p = new javaParser();
+		javaParser p = new javaParser(args[0], args[1]);
 		//Stream<String> lines = Files.lines(Paths.get("C:/Windows/uml-parser-test-1"));
 		if (args.length == 2){
 			String src = args[0];
