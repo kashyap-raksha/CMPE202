@@ -10,13 +10,14 @@ public class MainParser {
 	
 	private static File src_files = null;
 	private static File[] listOfFiles = null;
+	static javaParser p;
 
 	public static void main(String[] args) throws IOException  {
 		//FileInputStream in = new FileInputStream("C:/Windows/uml-parser-test-1");
 		
 		//Stream<String> lines = Files.lines(Paths.get("C:/Windows/uml-parser-test-1"));
 		if (args.length == 2){
-			javaParser p = new javaParser(args[0], args[1]);
+			p = new javaParser(args[0], args[1]);
 			String src = args[0];
 			src_files = new File(src);
 			listOfFiles = src_files.listFiles();
