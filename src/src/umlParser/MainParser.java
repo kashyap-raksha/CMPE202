@@ -13,12 +13,17 @@ public class MainParser {
 
 	public static void main(String[] args) throws IOException  {
 		//FileInputStream in = new FileInputStream("C:/Windows/uml-parser-test-1");
-		javaParser p = new javaParser(args[0], args[1]);
+		
 		//Stream<String> lines = Files.lines(Paths.get("C:/Windows/uml-parser-test-1"));
 		if (args.length == 2){
+			javaParser p = new javaParser(args[0], args[1]);
 			String src = args[0];
 			src_files = new File(src);
 			listOfFiles = src_files.listFiles();
+		}
+		else if (args[0].equals("seq")){
+			SequenceGenerator pse = new SequenceGenerator(args[1], args[2], args[3], args[4]);
+			pse.start();
 		}
 		else
 		{
