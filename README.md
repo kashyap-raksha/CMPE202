@@ -3,9 +3,8 @@
 UML Parser:
 A Java code parser which takes Java code file as input and gives the UML class diagram as the output based on the code.
 
-UMLGraph:
-UMLGraph is an open source code that can be used for the drawing of UML class and sequence diagrams and the reverse engineering of class diagrams from Java source code. 
-The UMLGraph source code repository is available on GitHub at https://github.com/dspinellis/UMLGraph.
+PlantUML:
+Diagrams are defined using a simple and intuitive language.
 
 UML Class diagram:
 In Software Engineering, a class diagram in the Unified Modeling Language (UML) is a structure diagram that describes the system's classes, attributes, methods, and the relationships among objects.
