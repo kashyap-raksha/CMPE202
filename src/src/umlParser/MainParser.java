@@ -22,9 +22,12 @@ public class MainParser {
 			src_files = new File(src);
 			listOfFiles = src_files.listFiles();
 		}
-		else if (args[0].equals("seq")){
-			SequenceGenerator pse = new SequenceGenerator(args[1], args[2], args[3], args[4]);
-			pse.start();
+		else if (args.length>2){
+			if(args[0].equals("seq")) {
+				SequenceGenerator pse = new SequenceGenerator(args[1], args[2], args[3], args[4]);
+				pse.start();
+			}	
+			
 		}
 		else
 		{
@@ -52,6 +55,6 @@ public class MainParser {
 				  p.startParsing(file);
 			  } 
 			}
-
+		
 	}
 }
