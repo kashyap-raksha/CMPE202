@@ -27,7 +27,9 @@ public class MainParser {
 				SequenceGenerator pse = new SequenceGenerator(args[1], args[2], args[3], args[4]);
 				pse.start();
 			}	
-			
+			else {
+				System.out.println("Provide the required arguments.");
+			}
 		}
 		else
 		{
