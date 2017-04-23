@@ -1,10 +1,14 @@
 # CMPE202 Project
 
-UML Parser:
+
+
+UMLParser:
 A Java code parser which takes Java code file as input and gives the UML class diagram as the output based on the code.
 
 PlantUML:
 Diagrams are defined using a simple and intuitive language. New users can refer to PlantUML Language Reference Guide for further information. 
+Users can download PlantUML from this official website - http://plantuml.com/
+
 
 UML Class diagram:
 In Software Engineering, a class diagram in the Unified Modeling Language (UML) is a structure diagram that describes the system's classes, attributes, methods, and the relationships among objects.
